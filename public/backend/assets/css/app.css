@@ -4324,8 +4324,8 @@ input::placeholder {
 }
 
 
-
-.topbar .navbar .dropdown-app .dropdown-menu .app-container {
+/* .topbar .navbar .dropdown-app .dropdown-menu .app-container { */
+.topbar .navbar .dropdown-app .dropdown-menu {
 
     position: relative;
 
@@ -4647,23 +4647,23 @@ input::placeholder {
 
 
 
-.header-message-list {
+/* .header-message-list {
 
 	position: relative;
 
 	height: 360px
 
-}
+} */
 
 
 
-.header-notifications-list {
+/* .header-notifications-list {
 
 	position: relative;
 
 	height: 360px
 
-}
+} */
 
 
 
