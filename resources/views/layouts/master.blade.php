@@ -1,15 +1,24 @@
-@include('partials.header')
+@include('partials.head')
 
-<body class="">
+<body>
+    <div class="wrapper">
+        @include('partials.navside')
 
+        @include('partials.navtop')
 
+        <div class="page-wrapper">
+            <div class="page-content">
 
+                @yield('content')
 
-    @include('partials.script')
+            </div>
+        </div>
 
+        @include('partials.script')
 
-    @include('partials.footer')
+        @include('partials.footer')
 
+    </div>
 </body>
 
 </html>
