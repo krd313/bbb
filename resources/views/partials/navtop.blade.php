@@ -30,6 +30,8 @@
                 </ul>
             </div>
 
+
+            @if (Auth::user()->role_id === 2|| Auth::user()->role_id ===3)
             <div class="user-box dropdown px-3">
                 <a class="d-flex align-items-center nav-link dropdown-toggle gap-3 dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <div class="user-info">
@@ -37,6 +39,8 @@
                     </div>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item d-flex align-items-center" href="javascript:;"><i class="bx bx-user fs-5"></i><span>Profile</span></a>
+                    </li>
                     <li><a class="dropdown-item d-flex align-items-center" href="javascript:;"><i class="bx bx-user fs-5"></i><span>Profile</span></a>
                     </li>
                     <li>
@@ -53,7 +57,7 @@
                     </form>
                 </ul>
             </div>
-
+            @endif
 
 
 
