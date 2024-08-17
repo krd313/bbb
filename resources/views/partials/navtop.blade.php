@@ -39,22 +39,16 @@
                     </div>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
-                    <li><a class="dropdown-item d-flex align-items-center" href="javascript:;"><i class="bx bx-user fs-5"></i><span>Profile</span></a>
+                    <li><a class="dropdown-item d-flex align-items-center" href="{{route('admin.index')}}"><i class="bx bx-user fs-5"></i><span>admin.index</span></a>
+                    </li>
+                    <li><a class="dropdown-item d-flex align-items-center" href="{{route('admin.roles.index')}}"><i class="bx bx-user fs-5"></i><span>Roles</span></a>
+                    </li>
+                    <li><a class="dropdown-item d-flex align-items-center" href="{{route('admin.permissions.index')}}"><i class="bx bx-user fs-5"></i><span>Permissions</span></a>
                     </li>
                     <li><a class="dropdown-item d-flex align-items-center" href="javascript:;"><i class="bx bx-user fs-5"></i><span>Profile</span></a>
                     </li>
-                    <li>
-                        <div class="dropdown-divider mb-0"></div>
-                    </li>
-                    <form method="POST" action="{{ route('logout') }}">
-                        @csrf
 
-                        <li><a class="dropdown-item d-flex align-items-center" href="route('logout')" onclick="event.preventDefault();
-                                                this.closest('form').submit();">
-                                <i class="bx bx-log-out-circle"></i><span>Logout</span>
-                            </a>
-                        </li>
-                    </form>
+
                 </ul>
             </div>
             @endif

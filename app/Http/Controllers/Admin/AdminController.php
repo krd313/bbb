@@ -3,18 +3,16 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Role;
 use Illuminate\Http\Request;
 
-class RoleController extends Controller
+class AdminController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $roles = Role::all();
-        return view('admin.roles.index', compact('roles'));
+        return view('admin.admin.index');
     }
 
     /**
@@ -22,7 +20,7 @@ class RoleController extends Controller
      */
     public function create()
     {
-        return view('admin.roles.create');
+        //
     }
 
     /**
@@ -36,7 +34,10 @@ class RoleController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id) {}
+    public function show(string $id)
+    {
+        //
+    }
 
     /**
      * Show the form for editing the specified resource.
